@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { TodoList } from "./components/todoList";
 
 function App() {
+  const todos = [
+    { index: 1, title: "Прибрати кімнату" },
+    { index: 2, title: "Вигуляти собаку" },
+    { index: 3, title: "Зробити домашку" },
+    { index: 4, title: "Сходити в магазин по продукти" },
+    { index: 5, title: "Поїсти" },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TodoList todos={todos} />
+      <button>Add Todo</button>
     </div>
   );
 }
+
+// 1. сворити React компоненту з назвою Student
+// 2. Student приймає 3 проперті - studentName, studentAge, studentHobby
+// 3. відрендерити  компоненту Student
+// export const Student = ....
+// ----
+// <Student ...
 
 export default App;

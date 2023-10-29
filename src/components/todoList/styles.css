@@ -1,0 +1,7 @@
+ul {
+  list-style: none;
+  padding: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
